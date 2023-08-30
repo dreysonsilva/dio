@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionais pizza</title>
+</head>
+<body>
+    <form method="get" onsubmit="">
+        <h3>Você selecionou: pizza de calabresa</h3>
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" name="opcional[]" value="queijo" disabled>+ Queijo<br>
+        <input type="checkbox" name="opcional[]" value="calabresa">+ Calabresa<br>
+        <input type="checkbox" name="opcional[]" value="cebola">+ Cebola<br>
+        <input type="checkbox" name="opcional[]" value="azeitona">+ Azeitona<br>
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value="nao">Não<br>
+        <p>Bebida</p>
+        <input type="radio" name="bebida" value="suco" >Suco<br>
+        <input type="radio" name="bebida" value="suco">Refrigerante<br>
+        <input type="radio" name="bebida" value="agua">Água<br>
+        <input type="radio" name="bebida" value="nenhum">Nenhum<br><br>
+
+        <button type="submit">Enviar pedido</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
