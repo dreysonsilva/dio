@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário e suas tags</title>
+</head>
+<body>
+    <form name="sigup" target="" autocomplete="on" onsubmit="alert('Formulario enviado');" method="POST" action="#">
+        Nome:<input type="text" name="name" autofocus placeholder="Nome completo" required></br>
+        senha:<input type="password" name="password" maxlength="4" minlength="1"></br>
+        idade:<input type="number" name="idade" min="0" max="5"></br>
+        <label>Range nível: </label><input type="range"/></br>
+        <label>Color: </label><input type="color"/></br>
+        <label>E-mail</label><input type="email"/></br>
+        <label>E-mail</label><input type="url"/></br>
+        <label>Date</label><input type="date"/></br>
+        <label>Week</label><input type="week"/></br>
+        <label>Mês</label><input type="month"/></br>
+        <label>check box</label><input type="checkbox"/></br>
+        <label>check box</label><input type="checkbox"/></br>
+        <label>Radio</label><input type="radio" name="aceite"/></br>
+        <label>Radio</label><input type="radio" name="aceite"/></br>
+        <label>Hidden</label><input type="hidden"/></br>
+        <label>File: </label><input type="file" multiple/></br>
+        <label>Seach</label><input type="search"/></br>
+        <label>button:</label><input type="button" disabled  value="EEnviar"/>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

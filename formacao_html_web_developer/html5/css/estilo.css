@@ -1,0 +1,45 @@
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a{
+    padding: 10px 15px;
+    color: blue;
+    text-decoration: none;
+    border: 15px 15px 0 0;
+    border-radius: 10px 10px 0 0;
+}
+
+nav ul li a:hover{
+    color: white;
+    background: blue;
+}
+
+
+kbd{
+    border:solid 1px black;
+    padding: 5px;
+}
+
+pre{
+    background:#f1f1f1;
+}
+
+pre>code{
+    font-style: italic;
+    color: red ;
+}
+pre > p{
+    font-style: italic;
+    color: gray;
+}
+
+/*
+details
+*/
+details> p >code{
+    background-color:#f1f1f1;
+    color: blue;
+}
