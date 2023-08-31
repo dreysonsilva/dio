@@ -17,3 +17,12 @@ fieldset{
     border-radius: 10px;
     border-color:lightgray;
 }
+
+table tr:nth-child(even){
+    background-color:red
+}
+
+table tr:hover td{
+    background-color:aqua;
+    cursor: pointer;
+}
