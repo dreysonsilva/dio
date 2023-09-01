@@ -1,0 +1,19 @@
+h1{
+    color: red;
+}
+
+[title="Streaming"]{
+    background-color: blue;
+}
+[title~="login"]{
+    background-color: greenyellow;
+}
+[href~="com"]{
+    background-color: greenyellow
+}
+[href$="login"]{
+    background-color: aqua;
+}
+[href*="http://"]{
+    background-color: red;
+}
