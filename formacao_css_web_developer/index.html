@@ -6,26 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formação css web develope</title>
     </head>
-    <body>
-        <!--
-            SELETORES: definem em quais elementos nos vamos aplicar o css
-            1. Seletor de tag/tipo
-            2. seletor de id
-            3. seletor de class
-            4. seletor universal
-            5. seletor de atributo
-        -->
-        
-        <h1>TRILHA CSS</h1>
+    <body>        
+        <h1>/** SELETORES CSS */</h1>
         <div>
             <ul>
                 <li>
-                    <a title="streaming-netflix"  href="http://www.netflix.com">
+                    <a title="streaming-netflix"  href="login">
                         netflix
                     </a>
                 </li>
                 <li>
-                    <a title="streaming-prime"  href="http://www.prime.com">
+                    <a title="streaming-prime"  href="http://www.prime.com/video">
                         Prime
                     </a>
                 </li>
@@ -35,11 +26,62 @@
                     </a>
                 </li>
                 <li>
-                    <a title="streaming-disneyplus"  href="http://www.disneyplus.com">
+                    <a title="streaming-disneyplus.com"  href="http://www.disneyplus.com">
                         Disney Plus
                     </a>
                 </li>        
             </ul>
         </div>
+
+        <h1>/** AGRUPAMENTO DE SELETORES */</h1>
+        <p class="teste1">Podemos aplicar as mesmas regras css para varios grupos</p>
+        <div class="teste1 teste2">Assim, não precisamos ficar copiando e colando</div>
+        <br><br>
+
+        <a id="link-referencia" href="#">Clique para ver</a>
+        <br><br>
+
+        <a id="link-suporte" href="#">Clique para entrar</a>
+        <br><br>
+
+        <a id="botao-voltar" href="#">Voltar</a>
+        <br><br>
+
+        <button id="botao-fechar" href="#">fechar página</button>
+        
+        
+        <h1>/** COMBINADO DESCENDENTE *//</h1>
+        <p class="teste1">Podemos aplicar as mesmas regras css para varios grupos</p>
+        <div class="teste1 teste2">Assim, não precisamos ficar copiando e colando</div>
+
+
+        <ul>
+            <li  class="fundo-verde" id="lista-01">
+                <div>Item 1</div>
+                <ul id="sublista-01">
+                    <li>subintem A</li>
+                    <li>subintem B</li>
+                </ul>
+            </li>
+
+            <li  class="fundo-verde" id="lista-02">
+                <div>Item 2</div>
+                <ul id="sublista-02">
+                    <li>subintem A</li>
+                    <li>subintem B</li>
+                </ul>
+            </li>
+            
+            <li  class="fundo-azul" id="lista-03">
+                <div>Item 3</div>
+                <ul  id="sublista-03">
+                    <li>subintem A</li>
+                    <li>subintem B</li>
+                </ul>
+            </li>
+        </ul>
+
+
+
     </body>
 </html>

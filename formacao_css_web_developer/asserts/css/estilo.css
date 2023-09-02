@@ -1,19 +1,104 @@
-h1{
-    color: red;
+/**SELETORES CSS/
+/**
+    SELETORES: definem em quais elementos nos vamos aplicar o css
+    1. Seletor de tag/tipo
+    2. seletor de id
+    3. seletor de class
+    4. seletor universal
+    5. seletor de atributo
+*/
+
+/** coloca a regra em toto atributo com a tag title*/
+[title]{
+    color: antiquewhite;
 }
 
-[title="Streaming"]{
-    background-color: blue;
+/* vai alterar os valores que estão no title com o nome entre  " "*/
+[title="netflix"]{
+    color: antiquewhite;
 }
-[title~="login"]{
-    background-color: greenyellow;
+
+/* procura pela palavra exata ou o valor que tenha o atributo spotfy*/
+[title~="spotfy"]{
+    color:blueviolet
 }
-[href~="com"]{
+
+/** vai atribuir apenas o que tivere o prefixo */
+[href^="http://"]{
     background-color: greenyellow
 }
+
+/** vai atribuir apenas o que tivere o suprefixo( o que está no rabo da frase */
 [href$="login"]{
     background-color: aqua;
 }
+
+/**Vai atribuir o valor se encontrar a palavra em qualquer canto do texto*/
 [href*="http://"]{
     background-color: red;
 }
+
+
+/** AGRUPAMENTO DE SELETORES */
+h1,p,div{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1,[id^="botao"]{
+    background: lightgoldenrodyellow;
+}
+
+/** colocando dois estilo de classes*/
+.teste1.teste2{
+    color:pink;
+    font-size: 30px;
+}
+
+/** COMBINADO DESCENDENTE*/
+/**
+    SELETORES: definem em quais elementos nos vamos aplicar o css
+    1. Combinador descendente(espaço)
+    2. Combinador filha(>)
+    3. Combinador irmão adjante (+)
+    4. Combinador irmão geral (~) 
+
+    [SELETOR][COMBINAÇÃO][SELETOR]
+*/
+
+/*Colocando estilo no subitem*/
+li li{
+    color: blue;
+}
+
+.fundo-verde li{
+    background: limegreen;
+}
+.fundo-azul li{
+background: lightskyblue;
+}
+
+.fundo-verde #sublista-01 li{
+    color: black;
+}
+
+/* Pegando os filhos diretos 2. Combinador filha(>)*/
+.fundo-verde > p{
+    color: lightseagreen;
+}
+
+/** ele vai colocar o estilo nos paragrafos depois do fechamento da div, no primeiro irmão direto*/
+div+p{
+    color:tomato
+}
+/*Caso queira alterar os irmão depois só bastar usar o (~) */
+div~p{
+    color:tomato
+}
+
+.fundo-verde li  li{
+    background:blue
+}
+
+
+
+

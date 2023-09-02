@@ -1,0 +1,55 @@
+.alturaLargura{ 
+    background:lawngreen;
+    width: 200px;
+    height: 100px;
+}   
+
+button{
+    background: lightblue;
+    width: initial;
+    height: auto;
+    height: 60px;
+    border:0px ;
+}
+
+#div-01{
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+
+#div-02{
+    background: linen;
+    width: inherit; /*pegar a altura da div pai*/
+    height: inherit;/*pegar a altura da div pai*/
+}
+
+button.btn-min-max{
+    background: pink;
+    min-width: 200px; /*min e max*/
+    min-height: 200px;/*min e max*/
+}
+/*
+min-width
+max-width
+min-height
+max-height
+
+
+margin:0;
+margin-top:1px;
+margin-rigth:1px;
+margin-bottom:1px
+margin-heiht:1px;
+
+padding: 0 0 0 0;
+padding-top: 0px;
+padding-right: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+observação: Caso queira usa irherit para pegar o padrao 
+
+box-sizing:content-box;
+box-sizing:border-box
+
+*/

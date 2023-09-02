@@ -1,0 +1,32 @@
+li{
+    background: aqua;
+}
+#pre-definidas{
+    color: pink;
+}
+
+#current-color{
+    background: transparent;
+    color: blueviolet;
+    border: 1px solid currentColor; /*CurrentColor segue a color do elemento color escolhida*/
+}
+
+#hex{/*hexadecimal = #8bff7b e hexadecimalALFA = #8bff7b3F*/
+    color: #8bff7b3F;/*os 6 primeiros o hexadecimal o 2 ultimos valores alfa*/
+}
+
+#rgb{
+    color:rgb(0,25,0);
+    background: rgb(255,200,10);
+}
+#rgba{
+    color: rgba(255,0,0,0.3);
+}
+
+#hsl{
+    color: hsl(0, 100%, 50%);
+}
+
+#hsla{
+    color: hsl(0, 100%, 50%, 0.8);
+}
