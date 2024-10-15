@@ -1,7 +1,6 @@
-//função
 function calcularRank(vitorias, derrotas) {
     let saldoVitorias = vitorias - derrotas;
-    let nivel = 0;
+    let nivel = '';
 
     if (vitorias < 10) {
         nivel = 'Ferro';
@@ -22,6 +21,6 @@ function calcularRank(vitorias, derrotas) {
 }
 
 let vitorias = 60;
-let derrotas = 30;
+let derrotas = 5;
 let resultado = calcularRank(vitorias, derrotas);
 console.log(resultado);
