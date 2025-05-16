@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <progress id="progress" max="100" min="0"></progress>
+    <script>
+        var progress  = document.getElementById('progress');
+        const interval = setInterval(()=>{       
+        progress.value+=10;
+        },1000);       
+    </script>
+</body>
+</html>
