@@ -6,11 +6,14 @@
     <title>Progress</title>
 </head>
 <body>
+    <meter max="100" min="0" value="40">
+
+    </meter>
     <progress id="progress" max="100" min="0"></progress>
     <script>
         var progress  = document.getElementById('progress');
         const interval = setInterval(()=>{       
-        progress.value+=10;
+        progress.value+=1;
         },1000);       
     </script>
 </body>
